@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: homework-helper
+spec:
+  selector:
+    app: homework-helper
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer 
