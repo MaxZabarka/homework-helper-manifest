@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: homework-helper
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: homework-helper
+  template:
+    metadata:
+      labels:
+        app: homework-helper
+    spec:
+      containers:
+        - name: homework-helper
+          image: trm/helloworld-http
+          ports:
+            - containerPort: 80
