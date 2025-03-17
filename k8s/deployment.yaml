@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: homework-helper
-          image: strm/helloworld-http
+          image: maxzabarka/homework-helper:latest
           ports:
             - containerPort: 80
