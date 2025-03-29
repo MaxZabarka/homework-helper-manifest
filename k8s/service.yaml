@@ -9,9 +9,9 @@ spec:
     - name: homework-helper
       protocol: TCP
       port: 80
-      targetPort: homework-helper
+      targetPort: 3000
     - name: chat-app
       protocol: TCP
       port: 4321
-      targetPort: chat-app
+      targetPort: 80
   type: LoadBalancer
