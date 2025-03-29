@@ -17,3 +17,8 @@ spec:
           image: maxzabarka/homework-helper:latest
           ports:
             - containerPort: 3000
+        - name: chat-app
+          image: maxzabarka/runpod-chat:d529b176-677f-4a46-999f-779bb43c22c4
+          ports:
+            - containerPort: 80
+
